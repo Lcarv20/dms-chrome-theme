@@ -1,0 +1,23 @@
+{
+  "$schema": "https://github.com/duxlabs-dev/dux-shell/raw/refs/heads/master/quickshell/PLUGINS/plugin-schema.json",
+  "id": "dmsChromeTheme",
+  "name": "Dynamic Chrome Theming",
+  "description": "Dynamically synchronizes Chrome and Chromium browser theme colors with the Dux Shell Material 3 palette in real time.",
+  "version": "1.0.0",
+  "author": "Luís Carvalho",
+  "license": "MIT",
+  "icon": "globe",
+  "type": "daemon",
+  "capabilities": [
+    "browser",
+    "theming"
+  ],
+  "component": "./ChromeThemeDaemon.qml",
+  "settings": "./ChromeThemeSettings.qml",
+  "requires_dms": ">=2.0.0",
+  "permissions": [
+    "settings_read",
+    "settings_write",
+    "process"
+  ]
+}
